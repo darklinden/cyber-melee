@@ -1,0 +1,8 @@
+#字段名,值,备注,
+Always,0,常驻-角色:Self/Enemy 投射物:Proj/Other
+SkillUseToSelf,1,技能使用时为自己添加eot
+SkillUseToEnemy,2,技能使用时为目标添加eot
+ProjSpawnToProj,3,投射物生成时为投射物添加eot
+ProjCollideToProj,4,投射物碰撞时为自己添加eot
+ProjCollideToOther,5,投射物碰撞时为自己添加eot
+ProjArriveToEnemy,6,投射物到达目标时为目标添加eot

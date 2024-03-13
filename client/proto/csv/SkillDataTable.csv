@@ -1,0 +1,6 @@
+名称|skill_type:SkillType,冷却时间|cooldown:int32,公共冷却|global_cd:int32,动画总时间|anim_dur:int32,技能生效时间|cast_dur:int32,投射物|projectiles:[ProjectileType],触发器|trigger:[EOTTrigger],#备注
+Cast,1000,1000,300,200,Hammer;Shield;Pliers;,,释放技能
+Swap,5000,1000,300,200,,,切换技能缓存顶部的两个技能
+Random,6000,1000,300,200,,,随机技能缓存顶部的技能
+Remove,1000,1000,300,200,,,移除技能缓存顶部的技能
+PowerUp,10000,1000,300,200,,PowerUp#SkillUseToSelf#0,强化技能缓存顶部的技能-无视一次弱点相克

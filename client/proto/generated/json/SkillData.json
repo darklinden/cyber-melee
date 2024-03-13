@@ -1,0 +1,55 @@
+{
+    "rows": [
+        {
+            "skill_type": "Cast",
+            "cooldown": 1000,
+            "global_cd": 1000,
+            "anim_dur": 300,
+            "cast_dur": 200,
+            "projectiles": [
+                "Hammer",
+                "Shield",
+                "Pliers"
+            ]
+        },
+        {
+            "skill_type": "Swap",
+            "cooldown": 5000,
+            "global_cd": 1000,
+            "anim_dur": 300,
+            "cast_dur": 200,
+            "projectiles": []
+        },
+        {
+            "skill_type": "Random",
+            "cooldown": 6000,
+            "global_cd": 1000,
+            "anim_dur": 300,
+            "cast_dur": 200,
+            "projectiles": []
+        },
+        {
+            "skill_type": "Remove",
+            "cooldown": 1000,
+            "global_cd": 1000,
+            "anim_dur": 300,
+            "cast_dur": 200,
+            "projectiles": []
+        },
+        {
+            "skill_type": "PowerUp",
+            "cooldown": 10000,
+            "global_cd": 1000,
+            "anim_dur": 300,
+            "cast_dur": 200,
+            "projectiles": [],
+            "trigger": [
+                {
+                    "eot": "PowerUp",
+                    "trigger_type": "SkillUseToSelf",
+                    "trigger_param0": 0
+                }
+            ]
+        }
+    ]
+}

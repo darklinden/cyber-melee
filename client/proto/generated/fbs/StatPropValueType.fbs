@@ -1,0 +1,6 @@
+namespace Proto;
+
+enum StatPropValueType : byte {
+    VAL = 0, // 加值 
+    MUL = 1, // 乘值 
+}

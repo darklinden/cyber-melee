@@ -1,0 +1,9 @@
+include "StatPropType.fbs";
+include "StatPropValueType.fbs";
+namespace Proto;
+
+table StatProp {
+    prop_type:StatPropType; // 属性类型 
+    value_type:StatPropValueType; // 属性数值类型 
+    prop_value:int64; // 属性数值 乘值时 1000 为 1 
+}

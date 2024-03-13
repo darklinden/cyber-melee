@@ -1,0 +1,5 @@
+#int 字段名,值,备注,
+NONE,0,
+Hammer,1,
+Shield,2,
+Pliers,3,

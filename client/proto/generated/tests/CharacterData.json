@@ -1,0 +1,84 @@
+{
+  "rows": [
+    {
+      "id": 1,
+      "name": "\u5207\u6362",
+      "props": [
+        {
+          "prop_type": "Attack",
+          "value_type": "VAL",
+          "prop_value": 100
+        },
+        {
+          "prop_type": "HP",
+          "value_type": "VAL",
+          "prop_value": 1000
+        }
+      ],
+      "cast_skill": "Cast",
+      "special_skill": "Swap",
+      "bullet_gen_cd": 3000,
+      "bullet_buffer_size": 7
+    },
+    {
+      "id": 2,
+      "name": "\u968F\u673A",
+      "props": [
+        {
+          "prop_type": "Attack",
+          "value_type": "VAL",
+          "prop_value": 100
+        },
+        {
+          "prop_type": "HP",
+          "value_type": "VAL",
+          "prop_value": 1000
+        }
+      ],
+      "cast_skill": "Cast",
+      "special_skill": "Random",
+      "bullet_gen_cd": 3000,
+      "bullet_buffer_size": 7
+    },
+    {
+      "id": 3,
+      "name": "\u4E22\u5F03",
+      "props": [
+        {
+          "prop_type": "Attack",
+          "value_type": "VAL",
+          "prop_value": 100
+        },
+        {
+          "prop_type": "HP",
+          "value_type": "VAL",
+          "prop_value": 1000
+        }
+      ],
+      "cast_skill": "Cast",
+      "special_skill": "Remove",
+      "bullet_gen_cd": 3000,
+      "bullet_buffer_size": 7
+    },
+    {
+      "id": 4,
+      "name": "\u5F3A\u5316",
+      "props": [
+        {
+          "prop_type": "Attack",
+          "value_type": "VAL",
+          "prop_value": 100
+        },
+        {
+          "prop_type": "HP",
+          "value_type": "VAL",
+          "prop_value": 1000
+        }
+      ],
+      "cast_skill": "Cast",
+      "special_skill": "PowerUp",
+      "bullet_gen_cd": 3000,
+      "bullet_buffer_size": 5
+    }
+  ]
+}

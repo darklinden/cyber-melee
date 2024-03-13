@@ -1,0 +1,88 @@
+{
+    "rows": [
+        {
+            "eot": "Eliminate",
+            "kind": "Special",
+            "duration": -1,
+            "max_stack": 1,
+            "dph": 0,
+            "doh_interval": 0,
+            "special_param": 0
+        },
+        {
+            "eot": "HitBack",
+            "kind": "Special",
+            "duration": -1,
+            "max_stack": 1,
+            "dph": 0,
+            "doh_interval": 0,
+            "special_param": 0
+        },
+        {
+            "eot": "PowerUp",
+            "kind": "Trigger",
+            "duration": -1,
+            "max_stack": 1,
+            "dph": 0,
+            "doh_interval": 0,
+            "special_param": 1,
+            "triggers": [
+                {
+                    "eot": "PowerUp",
+                    "trigger_type": "ProjSpawnToProj",
+                    "trigger_param0": 0
+                }
+            ]
+        },
+        {
+            "eot": "Duration",
+            "kind": "Special",
+            "duration": -1,
+            "max_stack": 10,
+            "dph": 0,
+            "doh_interval": 0,
+            "special_param": 10000
+        },
+        {
+            "eot": "ATKPower",
+            "kind": "Buff",
+            "duration": -1,
+            "max_stack": 10,
+            "props": [
+                {
+                    "prop_type": "Attack",
+                    "value_type": "MUL",
+                    "prop_value": 1000
+                }
+            ],
+            "dph": 0,
+            "doh_interval": 0,
+            "special_param": 0
+        },
+        {
+            "eot": "Bleed",
+            "kind": "Damage",
+            "duration": -1,
+            "max_stack": 10,
+            "dph": 10,
+            "doh_interval": 1000,
+            "special_param": 0
+        },
+        {
+            "eot": "BleedTrigger",
+            "kind": "Trigger",
+            "duration": -1,
+            "max_stack": 1,
+            "dph": 0,
+            "doh_interval": 0,
+            "special_param": 1,
+            "triggers": [
+                {
+                    "eot": "Bleed",
+                    "trigger_type": "ProjArriveToEnemy",
+                    "trigger_param0": 0
+                }
+            ]
+        }
+    ]
+}

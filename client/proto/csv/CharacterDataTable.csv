@@ -1,0 +1,5 @@
+ID|id:int32,名称|name:string,属性|props:[StatProp],技能|cast_skill:SkillType,技能|special_skill:SkillType,子弹生成冷却|bullet_gen_cd:int32,子弹缓存长度|bullet_buffer_size:int32,#备注,
+1,切换,Attack#VAL#100;HP#VAL#1000;,Cast,Swap,3000,7,The One,
+2,随机,Attack#VAL#100;HP#VAL#1000;,Cast,Random,3000,7,The One,
+3,丢弃,Attack#VAL#100;HP#VAL#1000;,Cast,Remove,3000,7,The One,
+4,强化,Attack#VAL#100;HP#VAL#1000;,Cast,PowerUp,3000,5,The One,

@@ -1,0 +1,7 @@
+namespace Proto;
+
+enum StatPropType : byte {
+    Unknown = 0, // 未指定 
+    HP = 1, // 生命 
+    Attack = 2, // 攻击 
+}

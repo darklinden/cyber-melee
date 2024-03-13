@@ -1,0 +1,9 @@
+include "EOTType.fbs";
+include "EOTTriggerFireType.fbs";
+namespace Proto;
+
+table EOTTrigger {
+    eot:EOTType; // “效果类型” 
+    trigger_type:EOTTriggerFireType; // 触发方式 
+    trigger_param0:int32; // 触发参数-原int-这里特化为ProjectileType 
+}

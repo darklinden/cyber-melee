@@ -1,0 +1,97 @@
+namespace Proto;
+
+table RequestTimeSync {
+	 client_time : uint64;
+}
+
+table ResponseTimeSync {
+	client_time : uint64;
+	server_time : uint64;
+}
+
+table RequestEnter {
+	name : string;
+	other_info : [int32];
+}
+
+table ResponseEnter {
+	player_id : uint64;
+	reconnect_secret : uint64;
+}
+
+table PlayerInfo {
+	player_id : uint64;
+	name : string;
+	seed : uint64;
+	other_info : [int32];
+}
+
+table BattleCamp {
+	camp_id : int32;
+	players : [PlayerInfo];
+}
+
+table ServerBroadcastBattleStart {
+	room_id : int64;
+	camps : [BattleCamp];
+}
+
+table ClientPushBattleLoadProgress {
+	progress : int32;
+}
+
+table ServerBroadcastBattleLoadProgress {
+	player_id : uint64;
+	progress : int32;
+}
+
+table ServerBroadcastBattleStarted {
+	start_server_time : uint64;
+}
+
+table ClientPushBattleAction {
+	action_type : int32;
+	action_params : [int32];
+}
+
+table BattleAction {
+	player_id : uint64;
+	action_type : int32;
+	action_params : [int32];
+}
+
+table ServerBroadcastBattleAction {
+	server_time : uint64;
+	actions : [BattleAction];
+}
+
+table ServerBroadcastBattleShouldFinish {
+	server_time : uint64;
+}
+
+table RequestBattleEnd {
+	win_camp_rank : [uint64];
+}
+
+table ResponseBattleEnd {
+}
+
+table ServerBroadcastBattleFinished {
+	result_same: bool;
+	win_camp_rank : [uint64];
+}
+
+table RequestReconnect {
+	player_id : uint64;
+	reconnect_secret: uint64;
+}
+
+table ResponseReconnect {
+	game_state: int32; // 0: enter queue, 1: in game
+}
+
+table ReconnectedBattleState {
+	start_server_time : uint64;
+	current_server_time : uint64;
+	passed_actions : [ServerBroadcastBattleAction];
+}

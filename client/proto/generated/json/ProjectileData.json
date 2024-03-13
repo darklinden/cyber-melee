@@ -1,0 +1,69 @@
+{
+    "rows": [
+        {
+            "projectile_type": "Hammer",
+            "circle_collider_radius": 500,
+            "speed": 4000,
+            "damage": 600,
+            "max_life_time": 10000,
+            "match_up": "Pliers",
+            "trigger": [
+                {
+                    "eot": "ATKPower",
+                    "trigger_type": "ProjCollideToProj",
+                    "trigger_param0": 3
+                },
+                {
+                    "eot": "HitBack",
+                    "trigger_type": "ProjCollideToProj",
+                    "trigger_param0": 2
+                },
+                {
+                    "eot": "Duration",
+                    "trigger_type": "ProjCollideToProj",
+                    "trigger_param0": 2
+                }
+            ]
+        },
+        {
+            "projectile_type": "Shield",
+            "circle_collider_radius": 500,
+            "speed": 4000,
+            "damage": 600,
+            "max_life_time": 10000,
+            "match_up": "Hammer",
+            "trigger": [
+                {
+                    "eot": "Eliminate",
+                    "trigger_type": "ProjCollideToProj",
+                    "trigger_param0": 3
+                },
+                {
+                    "eot": "Eliminate",
+                    "trigger_type": "ProjCollideToProj",
+                    "trigger_param0": 1
+                }
+            ]
+        },
+        {
+            "projectile_type": "Pliers",
+            "circle_collider_radius": 500,
+            "speed": 4000,
+            "damage": 600,
+            "max_life_time": 10000,
+            "match_up": "Shield",
+            "trigger": [
+                {
+                    "eot": "BleedTrigger",
+                    "trigger_type": "ProjCollideToProj",
+                    "trigger_param0": 2
+                },
+                {
+                    "eot": "Eliminate",
+                    "trigger_type": "ProjCollideToProj",
+                    "trigger_param0": 1
+                }
+            ]
+        }
+    ]
+}

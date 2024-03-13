@@ -1,0 +1,84 @@
+{
+    "rows": [
+        {
+            "id": 1,
+            "name": "切换",
+            "props": [
+                {
+                    "prop_type": "Attack",
+                    "value_type": "VAL",
+                    "prop_value": 100
+                },
+                {
+                    "prop_type": "HP",
+                    "value_type": "VAL",
+                    "prop_value": 1000
+                }
+            ],
+            "cast_skill": "Cast",
+            "special_skill": "Swap",
+            "bullet_gen_cd": 3000,
+            "bullet_buffer_size": 7
+        },
+        {
+            "id": 2,
+            "name": "随机",
+            "props": [
+                {
+                    "prop_type": "Attack",
+                    "value_type": "VAL",
+                    "prop_value": 100
+                },
+                {
+                    "prop_type": "HP",
+                    "value_type": "VAL",
+                    "prop_value": 1000
+                }
+            ],
+            "cast_skill": "Cast",
+            "special_skill": "Random",
+            "bullet_gen_cd": 3000,
+            "bullet_buffer_size": 7
+        },
+        {
+            "id": 3,
+            "name": "丢弃",
+            "props": [
+                {
+                    "prop_type": "Attack",
+                    "value_type": "VAL",
+                    "prop_value": 100
+                },
+                {
+                    "prop_type": "HP",
+                    "value_type": "VAL",
+                    "prop_value": 1000
+                }
+            ],
+            "cast_skill": "Cast",
+            "special_skill": "Remove",
+            "bullet_gen_cd": 3000,
+            "bullet_buffer_size": 7
+        },
+        {
+            "id": 4,
+            "name": "强化",
+            "props": [
+                {
+                    "prop_type": "Attack",
+                    "value_type": "VAL",
+                    "prop_value": 100
+                },
+                {
+                    "prop_type": "HP",
+                    "value_type": "VAL",
+                    "prop_value": 1000
+                }
+            ],
+            "cast_skill": "Cast",
+            "special_skill": "PowerUp",
+            "bullet_gen_cd": 3000,
+            "bullet_buffer_size": 5
+        }
+    ]
+}

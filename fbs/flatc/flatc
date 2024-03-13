@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+BASEDIR=$(dirname "$0")
+SCRIPT_DIR="$(realpath "${BASEDIR}")"
+
+unameOut="$(uname -s)"
+case "${unameOut}" in
+Linux*) machine="-linux" ;;
+Darwin*) machine="-darwin-intel" ;;
+CYGWIN*) machine="-windows.exe" ;;
+MINGW*) machine="-windows.exe" ;;
+*) machine="UNKNOWN:${unameOut}" ;;
+esac
+
+EXE_PATH="${SCRIPT_DIR}/flatc${machine}"
+
+echo "flatc path: ${EXE_PATH}"
+echo ""
+
+$EXE_PATH $@

@@ -1,0 +1,17 @@
+include "StatProp.fbs";
+include "SkillType.fbs";
+namespace Proto;
+
+table CharacterDataRow {
+    id:int32;
+    name:string;
+    props:[StatProp];
+    cast_skill:SkillType;
+    special_skill:SkillType;
+    bullet_gen_cd:int32;
+    bullet_buffer_size:int32;
+}
+table CharacterData {
+    rows:[CharacterDataRow];
+}
+root_type CharacterData;

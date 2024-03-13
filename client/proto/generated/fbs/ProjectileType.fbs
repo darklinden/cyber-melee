@@ -1,0 +1,8 @@
+namespace Proto;
+
+enum ProjectileType : int32 {
+    NONE = 0, //  
+    Hammer = 1, //  
+    Shield = 2, //  
+    Pliers = 3, //  
+}

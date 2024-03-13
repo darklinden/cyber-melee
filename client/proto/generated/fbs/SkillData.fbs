@@ -1,0 +1,18 @@
+include "SkillType.fbs";
+include "ProjectileType.fbs";
+include "EOTTrigger.fbs";
+namespace Proto;
+
+table SkillDataRow {
+    skill_type:SkillType;
+    cooldown:int32;
+    global_cd:int32;
+    anim_dur:int32;
+    cast_dur:int32;
+    projectiles:[ProjectileType];
+    trigger:[EOTTrigger];
+}
+table SkillData {
+    rows:[SkillDataRow];
+}
+root_type SkillData;

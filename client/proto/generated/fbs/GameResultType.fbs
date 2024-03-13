@@ -1,0 +1,8 @@
+namespace Proto;
+
+enum GameResultType : byte {
+    Unknown = 0, // 未知 
+    Win = 1, // 胜 
+    Lose = 2, // 负 
+    Draw = 3, // 平 
+}

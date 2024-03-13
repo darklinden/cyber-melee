@@ -1,0 +1,18 @@
+#!/bin/bash
+
+cwd=$(
+    cd "$(dirname "$0")"
+    pwd
+)
+
+echo "Current Directory $cwd"
+des=$cwd"-debug"
+echo "Destination Directory $des"
+
+if [ ! -d $des ]; then
+    echo "creating debug copy ..."
+    rsync -av --delete $cwd"/" $des --exclude .git
+else
+    echo "sync Assets ..."
+    rsync -av --delete $cwd"/Assets/" $des"/Assets"
+fi

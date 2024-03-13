@@ -1,0 +1,4 @@
+#字段名,字段类型,备注,
+eot,EOTType,“效果类型”
+trigger_type,EOTTriggerFireType,"触发方式"
+trigger_param0,int32,"触发参数-原int-这里特化为ProjectileType"

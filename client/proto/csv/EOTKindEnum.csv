@@ -1,0 +1,8 @@
+#字段名,值,备注,
+None,0,无,
+Damage,1,伤害,
+Heal,2,治疗,
+Buff,3,增益,
+Debuff,4,减益,
+Special,5,特殊状态,
+Trigger,6,触发器挂点,

@@ -1,0 +1,4 @@
+类型|projectile_type:ProjectileType,碰撞检测|circle_collider_radius:int32,飞行速度|speed:int32,伤害系数|damage:int32,最大时长|max_life_time:int32,属性克治|match_up:ProjectileType,触发器|trigger:[EOTTrigger],#comment
+Hammer,500,4000,600,10000,Pliers,ATKPower#ProjCollideToProj#ProjectileType::Pliers;HitBack#ProjCollideToProj#ProjectileType::Shield;Duration#ProjCollideToProj#ProjectileType::Shield;,
+Shield,500,4000,600,10000,Hammer,Eliminate#ProjCollideToProj#ProjectileType::Pliers;Eliminate#ProjCollideToProj#ProjectileType::Hammer,
+Pliers,500,4000,600,10000,Shield,BleedTrigger#ProjCollideToProj#ProjectileType::Shield;Eliminate#ProjCollideToProj#ProjectileType::Hammer,剪在遇到布时触发流血触发器

@@ -1,0 +1,21 @@
+include "EOTType.fbs";
+include "EOTKind.fbs";
+include "StatProp.fbs";
+include "EOTTrigger.fbs";
+namespace Proto;
+
+table EffectOverTimeDataRow {
+    eot:EOTType;
+    kind:EOTKind;
+    duration:int32;
+    max_stack:int32;
+    props:[StatProp];
+    dph:int32;
+    doh_interval:int32;
+    special_param:int32;
+    triggers:[EOTTrigger];
+}
+table EffectOverTimeData {
+    rows:[EffectOverTimeDataRow];
+}
+root_type EffectOverTimeData;

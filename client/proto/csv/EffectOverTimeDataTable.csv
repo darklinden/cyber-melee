@@ -1,0 +1,8 @@
+ID|eot:EOTType,类型|kind:EOTKind,持续时间|duration:int32,可叠加层数-不可叠加的会覆盖之前的|max_stack:int32,属性加减-当Type为Buff/Debuff时字段有效|props:[StatProp],伤害治疗攻击力百分比 1000 = 1 |dph:int32,伤害治疗间隔 毫秒第一次伤害在第一次间隔结束后|doh_interval:int32,特殊属性参数|special_param:int32,触发器|triggers:[EOTTrigger],#备注
+Eliminate,Special,-1,1,,,,,,下一帧移除投射物
+HitBack,Special,-1,1,,,,,,下一帧切换投射物方向和阵营
+PowerUp,Trigger,-1,1,,,,1,PowerUp#ProjSpawnToProj#0,无视一次弱点相克
+Duration,Special,-1,10,,,,10000,,增加 10秒 持续时间
+ATKPower,Buff,-1,10,Attack#MUL#1000,,,,,攻击debuff
+Bleed,Damage,-1,10,,10,1000,,,流血Dot
+BleedTrigger,Trigger,-1,1,,,,1,Bleed#ProjArriveToEnemy#0,拥有此状态的投射物到达目标时触发流血Dot

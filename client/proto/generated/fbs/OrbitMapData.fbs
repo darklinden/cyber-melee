@@ -1,0 +1,12 @@
+include "Vec3.fbs";
+namespace Proto;
+
+table OrbitMapDataRow {
+    id:int32;
+    camp1:[Vec3];
+    camp2:[Vec3];
+}
+table OrbitMapData {
+    rows:[OrbitMapDataRow];
+}
+root_type OrbitMapData;
